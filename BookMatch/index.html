@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMatch Acadêmico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container style-1 bg-red-bright">
+            <ul>
+                <li class="active"><a href="#home">HOME</a></li>
+                <li><a href="#services">SERVIÇOS</a></li>
+                <li><a href="#about">SOBRE NÓS</a></li>
+                <li><a href="#contact">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <section id="home" class="hero-container">
+            <img src="https://i.ibb.co/rfb1pQ4j/image-removebg-preview.png" class="minha-foto" alt="Mascote BookMatch">
+            <div class="hero-texto">
+                <h1>BEM-VINDO AO BOOKMATCH ACADÊMICO</h1>
+                <p>Onde a educação está mais acessível do que você pensa.</p>
+                <a href="#services" class="btn-primary">Explorar Serviços</a>
+            </div>
+        </section>
+
+     
+        <section id="services" class="section-container">
+            <h2 class="section-title">NOSSOS SERVIÇOS & COMO FUNCIONA</h2>
+            <p class="section-subtitle">O BookMatch funciona como uma plataforma ampla que prioriza o livre comércio e a acessibilidade de estudante para o melhor investimento em matérias de estudos mesclando o custo benefício. Além de uma organização limpa seguida de um metodologia onde o usuário consegue entender facilmente as etapas para compra, divulgação e venda de matérias didáticos. </p>
+
+            <div class="grid-services">
+               
+                <div class="card-service">
+                    <span class="step-badge">Etapa 1</span>
+                    <h3>Busca & Navegação</h3>
+                    <p>Encontre o livro exato digitando o título ou autor. Use filtros combinados por <strong>Curso</strong>, <strong>Disciplina</strong>, <strong>Campus</strong> e <strong>Estado de Conservação</strong>.</p>
+                    <div class="card-demo">
+                        <input type="text" placeholder="Buscar por título ou autor..." disabled>
+                        <select disabled><option>Filtro: Curso</option></select>
+                    </div>
+                </div>
+
+                <div class="card-service">
+                    <span class="step-badge">Etapa 2</span>
+                    <h3>Anúncio & Cadastro</h3>
+                    <p>Desapegue dos seus materiais antigos publicando um anúncio rápido. Faça upload de até 3 fotos e defina se é para <strong>Doação</strong> ou <strong>Troca</strong></p>
+                    <div class="card-demo">
+                        <button disabled>+ Upload de Fotos (Até 3)</button>
+                    </div>
+                </div>
+
+           
+                <div class="card-service">
+                    <span class="step-badge">Etapa 3</span>
+                    <h3>Página de Detalhes</h3>
+                    <p>Confira a galeria de fotos do livro, selos de conservação, por exemplo, selos escritos "novos" ou "um pouco desgastado" e visualize o perfil do aluno anunciante com transparência.</p>
+                    <div class="card-demo">
+                        <span class="badge">Selo: Como Novo</span>
+                    </div>
+                </div>
+
+      
+                <div class="card-service">
+                    <span class="step-badge">Etapa 4</span>
+                    <h3>Sistema de Contato</h3>
+                    <p>Clique no botão <strong>"Tenho Interesse"</strong> para abrir um chat direto e seguro, combinando o ponto de encontro de entrega dentro do seu campus.</p>
+                    <div class="card-demo">
+                        <button disabled class="btn-action">Tenho Interesse 💬</button>
+                    </div>
+                </div>
+
+             
+                <div class="card-service">
+                    <span class="step-badge">Etapa 5</span>
+                    <h3>Painel do Usuário</h3>
+                    <p>Acompanhe seus anúncios ativos, gerencie suas trocas e receba alertas da sua <strong>Lista de Desejos</strong> quando o livro que procura for cadastrado.</p>
+                    <div class="card-demo">
+                        <small>Anúncios Ativos | Lista de Desejos</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-container bg-card">
+            <h2 class="section-title">SOBRE O PROJETO</h2>
+            <p>O <strong>BookMatch Acadêmico</strong> é uma plataforma de economia circular universitária desenvolvida para conectar alunos, economizar dinheiro e evitar o desperdício de materiais didáticos no ambiente acadêmico.</p>
+        </section>
+
+
+        <section id="contact" class="section-container">
+            <h2 class="section-title">CONTATO & SUPORTE</h2>
+            <form class="form-contact" onsubmit="event.preventDefault();">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <textarea placeholder="Sua Mensagem ou Dúvida..." rows="4" required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; BookMatch Acadêmico| Desenvolvido por Heloísa F. Santana</p>
+    </footer>
+
+</body>
+</html>
