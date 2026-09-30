@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Livro - BookMatch Acadêmico</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos adicionais para o aviso e o botão aparecerem bonitos após o envio */
+        #cadastro-note {
+            display: none;
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
+            text-align: center;
+        }
+        #cadastro-ver-perfil {
+            display: none;
+            margin-top: 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-container style-1 bg-red-bright">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ENTRAR.html">BUSCA DE LIVROS</a></li>
+                <li class="active"><a href="cadastro.html">CADASTRAR LIVRO</a></li>
+                <li><a href="index.html#contact">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-container cadastro-bg">
+            <h2 class="section-title">ANUNCIE SEU LIVRO</h2>
+            <p class="section-subtitle">Preencha os dados do material que você quer trocar ou doar. Seu anúncio ficará visível para todos os alunos do seu campus.</p>
+
+            <div class="bg-card" style="padding: 30px; max-width: 600px; margin: 0 auto;">
+                <form class="form-contact" id="cadastro-form">
+                    <label for="l-titulo">Título do Livro</label>
+                    <input id="l-titulo" type="text" placeholder="Ex.: Cálculo A - Volume 1" required>
+
+                    <label for="l-autor">Autor</label>
+                    <input id="l-autor" type="text" placeholder="Ex.: James Stewart" required>
+
+                    <label for="l-curso">Curso / Disciplina</label>
+                    <input id="l-curso" type="text" placeholder="Ex.: Engenharia, Cálculo" required>
+
+                    <label for="l-campus">Campus</label>
+                    <select id="l-campus" required>
+                        <option value="">Selecione o campus</option>
+                        <option>Central</option>
+                        <option>Norte</option>
+                        <option>Sul</option>
+                    </select>
+
+                    <label for="l-estado">Estado de Conservação</label>
+                    <select id="l-estado" required>
+                        <option value="">Selecione o estado</option>
+                        <option>Como Novo</option>
+                        <option>Bom Estado</option>
+                        <option>Desgastado</option>
+                    </select>
+
+                    <label for="l-tipo">Tipo de Anúncio</label>
+                    <select id="l-tipo" required>
+                        <option value="">Troca ou Doação?</option>
+                        <option>Troca</option>
+                        <option>Doação</option>
+                    </select>
+
+                    <label for="l-fotos">Fotos (até 3)</label>
+                    <input id="l-fotos" type="file" accept="image/*" multiple>
+
+                    <label for="l-desc">Descrição (opcional)</label>
+                    <textarea id="l-desc" rows="3" placeholder="Alguma observação sobre o livro..."></textarea>
+
+                    <button type="submit" class="btn-primary">Publicar Anúncio</button>
+                    
+                    <!-- Mensagem de sucesso e botão de redirecionamento -->
+                    <p id="cadastro-note">Anúncio publicado! Em breve outros alunos poderão ver o seu livro.</p>
+                    <a href="LIVROPERFIL.HTML" id="cadastro-ver-perfil" class="btn-primary">Ver Página do Livro</a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; BookMatch Acadêmico | Desenvolvido por Heloísa F. Santana</p>
+    </footer>
+
+    <script>
+    document.getElementById('cadastro-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        // Exibe o aviso e o botão de navegação para a próxima página
+        document.getElementById('cadastro-note').style.display = 'block';
+        document.getElementById('cadastro-ver-perfil').style.display = 'block';
+        this.reset();
+    });
+    </script>
+</body>
+</html>
