@@ -1,0 +1,226 @@
+body {
+    background: linear-gradient(to right, #bed8f8, #71d2ff);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    color: #121a35;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.bg-red-bright { 
+    background: rgba(255, 255, 255, 0.35); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.616);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; 
+    width: 100%;
+}
+
+.nav-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; 
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: rgba(20, 22, 34, 0.8); 
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: all 0.3s ease; 
+}
+
+.nav-container ul li a:hover,
+.nav-container ul li.active a {
+    color: #121a35;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    min-height: 70vh;
+    padding: 0 20px;
+}
+
+.hero-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-texto h1 {
+    margin: 0 0 10px 0;
+    color: #121a35;
+    font-size: 32px;
+}
+
+.hero-texto p {
+    margin: 0 0 20px 0;
+    color: #2c3e50;
+    font-size: 18px;
+}
+
+.minha-foto {
+    max-width: 250px;
+    height: auto;
+}
+
+.section-container {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-card {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.grid-services {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.card-service {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 18px;
+    padding: 35px;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.step-badge {
+    background: #121a35;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.card-service h3 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+}
+
+.card-service p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.card-demo {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.card-demo input, .card-demo select, .card-demo button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #020101;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+.card-icon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    float: right;
+    margin-top: -5px;
+    opacity: 0.85;
+}
+.btn-primary {
+    background: #000000;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #2c3e50;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-contact input, .form-contact textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background: rgba(255,255,255,0.7);
+    font-family: inherit;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #15275f;
+    background: rgba(255, 255, 255, 0.2);
+}
