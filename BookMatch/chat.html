@@ -1,0 +1,153 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat | BookMatch Acadêmico</title>
+    <link rel="stylesheet" href="style (2).css">
+
+    <style>
+        .chat-messages {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .message {
+            max-width: 80%;
+            padding: 10px 14px;
+            border-radius: 12px;
+            font-size: 14px;
+        }
+
+        .received {
+            align-self: flex-start;
+            background: rgba(255, 255, 255, 0.85);
+        }
+
+        .sent {
+            align-self: flex-end;
+            background: #121a35;
+            color: white;
+        }
+
+        .chat-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #121a35;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .quick-messages,
+        .chat-input {
+            padding: 16px 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .quick-messages button {
+            margin: 4px;
+        }
+
+        .chat-input {
+            display: flex;
+            gap: 8px;
+        }
+
+        .chat-input input {
+            flex: 1;
+            min-width: 0;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-container style-1 bg-red-bright">
+            <ul>
+                <li><a href="index (2).html">HOME</a></li>
+                <li class="active"><a href="ENTRAR.html">BUSCA DE LIVROS</a></li>
+                <li><a href="cadastro.html">CADASTRAR LIVRO</a></li>
+                <li><a href="index (2).html#contact">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-container"
+            style="text-align: left; max-width: 600px;">
+
+            <a href="detalhes.html"
+                style="font-size: 14px; color: #121a35; text-decoration: none;">
+                ← Voltar para o livro
+            </a>
+
+            <div class="bg-card"
+                style="margin-top: 20px; padding: 0; overflow: hidden; border-radius: 16px;">
+
+                <div class="chat-header">
+                    <div class="avatar">HF</div>
+                    <div>
+                        <h3 style="margin: 0;">Heloísa F.</h3>
+                        <p style="margin: 0; font-size: 13px; color: #27ae60;">
+                            Online agora · Cálculo A - Volume 1
+                        </p>
+                    </div>
+                </div>
+
+                <div class="chat-messages">
+                    <div class="message received">
+                        Oi! Tudo bem?  O livro ainda está disponível.
+                    </div>
+
+                    <div class="message sent">
+                        Oi! Tenho interesse. Como podemos combinar?
+                    </div>
+
+                    <div class="message received">
+                        Podemos combinar a entrega na biblioteca do campus!
+                    </div>
+                </div>
+
+                <div class="quick-messages">
+                    <p>Escolha uma mensagem:</p>
+
+                    <button class="btn-primary">Quero o livro!</button>
+                    <button class="btn-primary">Mais detalhes</button>
+                    <button class="btn-primary">Ainda está disponível?</button>
+                    <button class="btn-primary">Combinar entrega</button>
+                </div>
+
+                <div class="chat-input">
+                    <input type="text" placeholder="Digite sua mensagem...">
+                    <button class="btn-primary">Enviar</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© BookMatch Acadêmico | Desenvolvido por Heloísa F. Santana</p>
+    </footer>
+
+</body>
+</html>
